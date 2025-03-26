@@ -46,8 +46,8 @@ class MainActivity : AppCompatActivity() {
 
         buttonDeleteAll.setOnClickListener {
             if (taskList.isNotEmpty()) {
-                taskList.clear()  // Очищаем список
-                adapter.notifyDataSetChanged() // Обновляем ListView
+                taskList.clear()
+                adapter.notifyDataSetChanged()
                 Toast.makeText(this, "Все задачи удалены", Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(this, "Список задач пуст", Toast.LENGTH_SHORT).show()
